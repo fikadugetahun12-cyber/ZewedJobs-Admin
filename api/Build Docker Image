@@ -1,0 +1,12 @@
+# 1. Build the Docker image
+docker build -t zewedjobs-admin .
+
+# 2. Run the container
+docker run -d \
+  -p 8080:80 \
+  -v $(pwd)/database:/var/www/html/database \
+  -v $(pwd)/logs:/var/www/html/logs \
+  --name zewedjobs-admin \
+  zewedjobs-admin
+
+# 3. Access at http://localhost:8080/admin/
