@@ -1,0 +1,4 @@
+git add .
+git commit -m "Add Render config"
+git push
+# Then connect repo at render.com
