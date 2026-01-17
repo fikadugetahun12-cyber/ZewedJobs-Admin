@@ -1,0 +1,11 @@
+# 1. Make sure you have Docker installed
+docker --version
+
+# 2. Build and run the container
+docker-compose up -d
+
+# 3. Access your admin panel
+# Open browser: http://localhost:8080/admin/
+
+# 4. Stop the container
+docker-compose down
