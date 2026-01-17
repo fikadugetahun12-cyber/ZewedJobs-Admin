@@ -1,0 +1,8 @@
+.git
+.gitignore
+README.md
+*.log
+node_modules/
+vendor/
+.env
+docker-compose.override.yml
