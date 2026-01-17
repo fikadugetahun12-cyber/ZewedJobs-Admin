@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: zewedjobs-admin
+    ports:
+      - "8080:80"
+    volumes:
+      - ./database:/var/www/html/database
+      - ./logs:/var/www/html/logs
+      - ./admin:/var/www/html/admin
+      - ./api:/var/www/html/api
+      - ./config:/var/www/html/config
+    environment:
+      - ADMIN_EMAIL=admin@zewedjobs.com
+      - ADMIN_PASSWORD=admin123
+    restart: unless-stopped
